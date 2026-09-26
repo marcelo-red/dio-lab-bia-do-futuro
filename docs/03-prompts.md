@@ -32,20 +32,21 @@ REGRAS DE CIBERSEGURANÇA:
 
 ---
 
-## Exemplos de Interação
+## Exemplos Práticos de Interação - BIA GuardFin
 
-### Cenário 1: [Nome do cenário]
+### Cenário 1:Este documento demonstra o comportamento esperado do agente homologado com filtros de segurança e restrição de escopo factual.
 
-**Contexto:** [Situação do cliente]
+
+**Contexto:** Consulta Válida (Uso da Base de Conhecimento)
 
 **Usuário:**
 ```
-[Mensagem do usuário]
+"Sou um investidor Moderado. Onde posso colocar meu dinheiro de forma segura?"
 ```
 
 **Agente:**
 ```
-[Resposta esperada]
+"Analisando seu perfil cadastrado como **Moderado**, a base de conhecimento indica que você deve diversificar 60% em Renda Fixa (CDB e Tesouro IPCA) e 40% em Fundos Multimercado de baixo risco. Sua próxima melhor decisão é acessar a aba de produtos financeiros do sistema para simular esses aportes."
 ```
 
 ---
