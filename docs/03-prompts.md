@@ -123,5 +123,5 @@ REGRAS DE CIBERSEGURANÇA:
 
 > Registre aqui ajustes que você fez nos prompts e por quê.
 
-- [Observação 1]
-- [Observação 2]
+-  O Agent BIA GuardFin (BIA Proteção Financeira) tem seu foco principal na Cibersegurança.
+-  A melhor estratégia para esse desafio foi criar um Agente Consultor de Investimentos e Alertas de Gastos, mas com um forte apelo visual e prático voltado para a Segurança e Anti-Alucinação
