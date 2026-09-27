@@ -59,12 +59,9 @@ Para o escopo deste protótipo, as variáveis críticas extraídas dos dados loc
 
 > Mostre um exemplo de como os dados são formatados para o agente.
 
-O exemplo de contexto montado abaixo , se baseia nos dados originais da base de conhecimento , mas os sintetiza deixando apenas as informações mais relevantes , otimizando assim o consumo de tokens. Entretanto , vale lembrar que mais importante do que economizar tokens , e ter todas as informações relevantes disponiveis em seu contest.
+O exemplo de contexto montado abaixo , se baseia nos dados originais da base de conhecimento , mas os sintetiza deixando apenas as informações mais relevantes , otimizando assim o consumo de tokens. Entretanto , vale lembrar que mais importante do que economizar tokens , e ter todas as informações relevantes disponiveis em seu contesto.
 
 ```
-
-## Exemplo de Contexto Montado
-
 Abaixo está o exemplo real de como a aplicação filtra, higieniza e estrutura os dados brutos obtidos das tabelas locais para gerar o contexto consolidado que guia as respostas da IA:
 
 ```text
