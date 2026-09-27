@@ -3,7 +3,6 @@
 > [!TIP]
 > **Prompt Sugerido para esta etapa:**
 Me ajude a documentar umagente de IA financeiro .O caso de uso é[descreva seu caso de uso]Preciso defeinir:problema que resolve,público-alvo ,personalidade do agente,tom de voz e estratégias anti-alucinação. use o template abaixo como base:
-
 [cole o template 01-documento-agente.md]
 
 > 
