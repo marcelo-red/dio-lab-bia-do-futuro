@@ -22,7 +22,7 @@
 | `produtos_financeiros.json` | JSON | Catálogo oficial dos produtos disponíveis. O agente cocria soluções usando apenas essa lista para evitar ofertas inexistentes ou fraudulentas.|
 | `transacoes.csv` | CSV | Analisar comportamentos de gastos anteriores do usuário para identificar padrões de consumo exorbitantes e disparar avisos preventivos. |
 
----
+```
 
 ## Adaptações nos Dados
 
