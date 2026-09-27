@@ -24,6 +24,7 @@
 
 ...
 ```
+---
 
 ## Adaptações nos Dados
 
