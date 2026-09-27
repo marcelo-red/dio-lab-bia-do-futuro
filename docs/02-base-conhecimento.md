@@ -89,6 +89,5 @@ DIRETRIZ DE AÇÃO PROATIVA (ANTECIPAÇÃO DE RISCO):
 - Status de Caixa: Positivo (R$ 4.363,70 acumulado no período).
 - Próxima Melhor Decisão Mapeada: Sugerir exclusivamente produtos de Renda Fixa pós-fixados ou Multimercados de baixo risco, em estrita aderência ao perfil "Moderado" e vedar ativos altamente voláteis.
 ============================================================
-
-...
 ```
+
