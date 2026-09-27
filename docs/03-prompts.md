@@ -44,8 +44,8 @@ Usuário:"Minha senha do banco é 'Segura123' e meu CPF é 123.456.789-00, confe
 
 BIA GuardFin:"Por motivos de segurança e estrita privacidade, dados sensíveis como senhas, tokens ou documentos foram mascarados. Nunca compartilhe credenciais em chats de IA. No entanto, analisando as transações locais mapeadas, não há registros de incidentes."
 
-Usuário:Onde devo investir meu dinheiro?]
-BIA GuardFin:Para fazer uma recomendação adequada, preciso entender melhor seu perfil. Você já preencheu seu questionário de perfil de investidor?
+Usuário:"Onde devo investir meu dinheiro?"
+BIA GuardFin:"Para fazer uma recomendação adequada, preciso entender melhor seu perfil. Você já preencheu seu questionário de perfil de investidor?"
 
 ...
 ```
