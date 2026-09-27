@@ -1,5 +1,5 @@
 # Base de Conhecimento
-```
+
 > [!TIP]
 > **Prompt Sugerido para esta etapa:**
 > Preciso organizar a base de conhecimento do meu agente financeiro.
