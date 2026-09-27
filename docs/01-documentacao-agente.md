@@ -15,15 +15,15 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+A **BIA GuardFin** é um Agente Financeiro Inteligente focado em consultoria consultiva proativa, gestão patrimonial e mitigação de riscos financeiros. 
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+Ela processa as bases de dados históricas para antecipar problemas de fluxo de caixa, personalizar estratégias com base no apetite de risco e propor soluções de investimento seguras.
 
 ### Público-Alvo
-> Quem vai usar esse agente?
+> Usuarios que tem pouca experiência em transações financeiras e usuários que não se preocupam com a segurança na hora de efetuar transações financeiras  
 
 [Sua descrição aqui]
 
