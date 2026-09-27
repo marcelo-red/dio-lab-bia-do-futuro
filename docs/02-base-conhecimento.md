@@ -31,7 +31,8 @@
 
 Não houve expansão de arquivos externos para garantir a conformidade e integridade do escopo do desafio. No entanto, o código da aplicação (src/app.py) foi adaptado com uma função de tratamento de exceções (try-except). Caso os arquivos físicos locais sofram alguma corrupção de caminho ou ausência no momento da execução, o sistema gera de forma resiliente dados sintéticos equivalentes diretamente na memória RAM, garantindo que o agente financeiro permaneça operacional sob qualquer circunstância de infraestrutura.
 
----
+...
+```
 
 ## Estratégia de Integração
 
