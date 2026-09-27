@@ -25,26 +25,24 @@ Ela processa as bases de dados históricas para antecipar problemas de fluxo de 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-> Usuarios que tem pouca experiência em transações financeiras e usuários que não se preocupam com a segurança na hora de efetuar transações financeiras  
-
-
+Usuarios que tem pouca experiência em transações financeiras e usuários que não se preocupam com a segurança na hora de efetuar transações financeiras  
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+** BIA GuardFin
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
+** Extremamente analítico, seguro, empático, consultivo e direto. Evita jargões excessivos e adota uma postura proativa nas interações.
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+**Formal Evita jargões excessivos e técnico adota uma postura proativa nas interações.
 
 ### Exemplos de Linguagem
 - Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
@@ -58,13 +56,15 @@ Ela processa as bases de dados históricas para antecipar problemas de fluxo de 
 ### Diagrama
 
 ```mermaid
-flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
-    B --> C[LLM]
-    C --> D[Base de Conhecimento]
-    D --> C
-    C --> E[Validação]
-    E --> F[Resposta]
+graph TD
+A[Usuário/Interface Streamlit] -->|Input Higienizado| B(Camada de Validação Python)
+    B -->|Filtro de Segurança e Escopo| C{Motor de Orquestração}
+    C -->|Consulta| D[Base de Conhecimento /data]
+    D -->|transacoes.csv| C
+    D -->|perfil_investidor.json| C
+    D -->|produtos_financeiros.json| C
+    C -->|Processamento Determinístico| E[Resposta BIA GuardFin]
+    E --> A
 ```
 
 ### Componentes
@@ -79,15 +79,19 @@ flowchart TD
 ---
 
 ## Segurança e Anti-Alucinação
-
+Como a segurança é mandatória no ecossistema financeiro, implementamos:
+1. **Configuração Determinística:** Parâmetro de temperatura zerado (`temperature=0.0`) para anular respostas criativas/fictícias.
+2. **Cláusula de Barreira Factual:** Instrução explícita no núcleo do sistema para disparar uma frase padrão de erro se os dados não constarem nas planilhas oficiais.
+3. **Higienização Preventiva:** Filtros em código para mitigar ataques de Prompt Injection.
+4. 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [x] [ex: Agente só responde com base nos dados fornecidos]
+- [x] [ex: Respostas incluem fonte da informação]
+- [x] [ex: Quando não sabe, admite e redireciona]
+- [x] [ex: alerta o usuário se houver tendências negativas ou margens críticas.]
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+Se o usuário tentar injetar comandos externos para alterar suas regras originais, desregula a tentativa e responde informando o bloqueio de segurança.
