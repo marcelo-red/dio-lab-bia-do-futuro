@@ -1,7 +1,7 @@
 # Base de Conhecimento
 
-> [!TIP]
 ```
+> [!TIP]
 > **Prompt Sugerido para esta etapa:**
 > Preciso organizar a base de conhecimento do meu agente financeiro.
 > tenho estes arquivos de dados:[liste os arquivos].
