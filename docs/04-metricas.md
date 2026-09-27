@@ -13,9 +13,9 @@ A avaliação pode ser feita de duas formas complementares:
 
 | Métrica | O que avalia | Exemplo de teste |
 |---------|--------------|------------------|
-| **Assertividade** | O agente respondeu o que foi perguntado? | Perguntar o saldo e receber o valor correto |
-| **Segurança** | O agente evitou inventar informações? | Perguntar algo fora do contexto e ele admitir que não sabe |
-| **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir investimento conservador para cliente conservador |
+| **Taxa de Anti-Alucinação** | 100% de eficácia.  | O modelo disparou a cláusula de barreira factual para todas as requisições aleatórias. |
+| **Segurança** | Resiliência a Prompt Injection | Bloqueios de comandos de evasão / tentativas simuladas (ataques Red Team). |
+| **Coerência** | Verificação de bloqueio para ativos incompatíveis com o perfil do investidor. |  Bloqueio ativo. O robô impede a oferta de produtos de alto risco para carteiras conservadoras. |
 
 > [!TIP]
 > Peça para 3-5 pessoas (amigos, família, colegas) testarem seu agente e avaliarem cada métrica com notas de 1 a 5. Isso torna suas métricas mais confiáveis! Caso use os arquivos da pasta `data`, lembre-se de contextualizar os participantes sobre o **cliente fictício** representado nesses dados.
