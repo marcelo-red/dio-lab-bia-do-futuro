@@ -1,5 +1,6 @@
 # Prompts do Agente
 **Prompt sugerido para esta etapa:**
+
 ```
 Crie um system prompt para um agente chamado BIA , um consultor financeiro que faz a segurança dos dados: Regras:
 > (1) ajuda o usuario a tomar decisões lógicas,
@@ -9,6 +10,8 @@ Crie um system prompt para um agente chamado BIA , um consultor financeiro que f
 > Inclua 3 exemplos de inerção 2 edge cases.
 >
 
+
+[Cole o template 03-Prompts.md]
 ```
  
 ## System Prompt
