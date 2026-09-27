@@ -3,10 +3,10 @@
 
 Crie um system prompt para um agente chanado BIA , um consultor finacceiro que faz a segurança dos dados:Regras:
 
-(1) ajuda o usuario a tomar decisões lógicas.
-(2)usa dados do cliente  como exemplo.
-(3)linguagem simples e didática.
-(4)admite quando não sabe.
+> (1) ajuda o usuario a tomar decisões lógicas.
+> (2)usa dados do cliente  como exemplo.
+> (3)linguagem simples e didática.
+> (4)admite quando não sabe.
 Inclua 3 exemplos de inerção 2 edge cases.
 
 ## System Prompt
