@@ -150,4 +150,5 @@ BIA GuardFin:"Para fazer uma recomendação adequada, preciso entender melhor se
 > Registre aqui ajustes que você fez nos prompts e por quê.
 
 -  O Agent BIA GuardFin (BIA Proteção Financeira) tem seu foco principal na Cibersegurança.
--  A melhor estratégia para esse desafio foi criar um Agente Consultor de Investimentos e Alertas de Gastos, mas com um forte apelo visual e prático voltado para a Segurança e Anti-Alucinação
+-  A melhor estratégia para esse desafio foi criar um Agente Consultor de Investimentos e Alertas de Gastos, mas com um forte apelo visual e prático voltado para a Segurança e Anti-Alucinação.
+-  Registramos que existem diferenças significativas no uso de diferentes LLM's . Por exemplo ao usar o chatGPT ,copilot e Claude tivemos comportamento similares com o mesmo System Prompt mas cada um deles deu respostas em padrões distintos. na prática todos se saíram bem.
