@@ -1,7 +1,7 @@
 # Prompts do Agente
 **Prompt sugerido para esta etapa:**
 ```
-Crie um system prompt para um agente chanado BIA , um consultor finacceiro que faz a segurança dos dados:Regras:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+Crie um system prompt para um agente chamado BIA , um consultor financeiro que faz a segurança dos dados: Regras:
 > (1) ajuda o usuario a tomar decisões lógicas,
 > (2)usa dados do cliente  como exemplo,
 > (3)linguagem simples e didática,
