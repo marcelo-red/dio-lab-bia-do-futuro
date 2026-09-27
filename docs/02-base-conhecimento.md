@@ -15,17 +15,12 @@
 
 ## Dados Utilizados
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
-
-| Arquivo | Formato | Utilização no Agente |
+| Arquivo | Formato | Para que serve na BIA |
 |---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
-
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
+| `historico_atendimento.csv` | CSV |Manter a continuidade consultiva, sabendo quais problemas anteriores o cliente relatou. |
+| `perfil_investidor.json` | JSON | Travar as recomendações da IA dentro das classes autorizadas (Conservador, Moderado ou Arrojado). |
+| `produtos_financeiros.json` | JSON | Catálogo oficial dos produtos disponíveis. O agente cocria soluções usando apenas essa lista para evitar ofertas inexistentes ou fraudulentas.|
+| `transacoes.csv` | CSV | Analisar comportamentos de gastos anteriores do usuário para identificar padrões de consumo exorbitantes e disparar avisos preventivos. |
 
 ---
 
