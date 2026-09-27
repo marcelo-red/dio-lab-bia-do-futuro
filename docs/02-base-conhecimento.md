@@ -1,5 +1,5 @@
 # Base de Conhecimento
-
+```
 > [!TIP]
 > 
 > **Prompt Sugerido para esta etapa:**
@@ -12,7 +12,7 @@
 > (2)decidir como usar cada um,
 > (3)criar um exemplo de contexto formatado para incluir no prompt.
 > 
-
+```
 
 
 ## Dados Utilizados
