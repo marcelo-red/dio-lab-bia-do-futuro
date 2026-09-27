@@ -42,6 +42,9 @@ Os dados estruturados (.csv e .json) localizados na pasta /data são importados 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
+Para simplificar ,podemos simplesmente "injetar" os dados em nosso prompt , garantindo que o nosso agente tenha o melhor contexto possível. Lembrando que, em soluções mais robustas, o ideal é que essas informações sejam carregadas dinamicamente para que possamos ganhar flexibilidade. 
+> 
+
 Para o escopo deste protótipo, as variáveis críticas extraídas dos dados locais (como o nome do cliente e a classificação exata contida no perfil_investidor.json) são injetadas dinamicamente como variáveis de ambiente dentro do prompt de sistema (System Prompt).Além disso, o fluxo do chat consulta o estado dos dados em tempo real para estruturar as respostas consultivas. Isso permite que a IA personalize as sugestões de forma reativa à entrada do usuário, garantindo uma ancoragem factual estrita que impede qualquer tipo de alucinação do modelo.
 
 ---
