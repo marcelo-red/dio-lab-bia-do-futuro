@@ -33,7 +33,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+Não houve expansão de arquivos externos para garantir a conformidade e integridade do escopo do desafio. No entanto, o código da aplicação (src/app.py) foi adaptado com uma função de tratamento de exceções (try-except). Caso os arquivos físicos locais sofram alguma corrupção de caminho ou ausência no momento da execução, o sistema gera de forma resiliente dados sintéticos equivalentes diretamente na memória RAM, garantindo que o agente financeiro permaneça operacional sob qualquer circunstância de infraestrutura.
 
 ---
 
@@ -42,12 +42,12 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Os dados estruturados (.csv e .json) localizados na pasta /data são importados de maneira assíncrona no início da inicialização da interface através do método @st.cache_data da biblioteca Pandas e do módulo nativo JSON do Python. Essa estratégia otimiza o desempenho do sistema, lendo os dados apenas uma vez e mantendo-os em cache na sessão do usuário, evitando requisições repetitivas de leitura em disco.
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+Para o escopo deste protótipo, as variáveis críticas extraídas dos dados locais (como o nome do cliente e a classificação exata contida no perfil_investidor.json) são injetadas dinamicamente como variáveis de ambiente dentro do prompt de sistema (System Prompt).Além disso, o fluxo do chat consulta o estado dos dados em tempo real para estruturar as respostas consultivas. Isso permite que a IA personalize as sugestões de forma reativa à entrada do usuário, garantindo uma ancoragem factual estrita que impede qualquer tipo de alucinação do modelo.
 
 ---
 
