@@ -60,7 +60,7 @@ Crie testes simples para validar seu agente:
 Após a execução dos testes automatizados e manuais na interface do Streamlit, registramos as seguintes conclusões de engenharia:
 
 **O que funcionou bem:**
-- - **Eficácia dos Filtros Estáticos (Camada de Defesa):** A interceptação de palavras-chaves de segurança (como "senha", "CPF", "ignore") funcionou com 100% de precisão e latência zero, bloqueando ameaças antes mesmo de processar o prompt.
+- **Eficácia dos Filtros Estáticos (Camada de Defesa):** A interceptação de palavras-chaves de segurança (como "senha", "CPF", "ignore") funcionou com 100% de precisão e latência zero, bloqueando ameaças antes mesmo de processar o prompt.
 - **Risco Zero de Alucinação:** A remoção de dependências externas e a amarração das respostas às variáveis fixas em memória garantiram que o agente nunca inventasse dados financeiros.
 - **Estabilidade da Interface:** O carregamento dos dados via cache do Streamlit manteve a aplicação leve e imune a falhas de leitura de disco rígido.
 
