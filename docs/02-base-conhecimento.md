@@ -4,7 +4,7 @@
 > **Prompt usado para esta etapa:**
 > 
 > Preciso organizar a base de conhecimento do meu agente financeiro.
-> tenho estes arquivos de dados:[liste os arquivos].
+> Tenho estes arquivos de dados:[liste os arquivos].
 > Me ajude a:
 > (1)entender o que cada arquivo contém,
 > (2)decidir como usar cada um,
