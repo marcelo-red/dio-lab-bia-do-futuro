@@ -50,14 +50,33 @@ Para o escopo deste protótipo, as variáveis críticas extraídas dos dados loc
 
 > Mostre um exemplo de como os dados são formatados para o agente.
 
-```
-Dados do Cliente:
-- Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
+## Exemplo de Contexto Montado
 
-Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
+Abaixo está o exemplo real de como a aplicação filtra, higieniza e estrutura os dados brutos obtidos das tabelas locais para gerar o contexto consolidado que guia as respostas da IA:
+
+```text
+============================================================
+CONTEXTO OPERACIONAL DO AGENTE (BIA GUARDFIN)
+============================================================
+POLÍTICA DE PRIVACIDADE: Dados sensíveis (senhas/CPF) ocultados.
+
+DADOS CADASTRAIS DO CLIENTE:
+- Nome do Usuário: Carlos Silva
+- Perfil de Risco: Moderado
+- Alvo Estratégico: Preservação de capital e crescimento a médio prazo.
+- Tolerância a Volatilidade: Média
+
+HISTÓRICO RECENTE DE TRANSAÇÕES (Mapeado via transacoes.csv):
+- 2026-09-10 | Valor: R$ -120.50 | Categoria: Alimentação    | Descrição: Restaurante Almoço
+- 2026-09-12 | Valor: R$ -45.90  | Categoria: Transporte    | Descrição: Corrida de Aplicativo
+- 2026-09-15 | Valor: R$ +5500.00| Categoria: Salário       | Descrição: Recebimento Mensal Empresa
+- 2026-09-20 | Valor: R$ -850.00 | Categoria: Lazer         | Descrição: Compra de Eletrônico
+- 2026-09-24 | Valor: R$ -119.90 | Categoria: Assinaturas   | Descrição: Serviço de Streaming de Vídeo
+
+DIRETRIZ DE AÇÃO PROATIVA (ANTECIPAÇÃO DE RISCO):
+- Status de Caixa: Positivo (R$ 4.363,70 acumulado no período).
+- Próxima Melhor Decisão Mapeada: Sugerir exclusivamente produtos de Renda Fixa pós-fixados ou Multimercados de baixo risco, em estrita aderência ao perfil "Moderado" e vedar ativos altamente voláteis.
+============================================================
+
 ...
 ```
