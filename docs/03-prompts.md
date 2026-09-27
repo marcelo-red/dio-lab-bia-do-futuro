@@ -9,12 +9,7 @@ Crie um system prompt para um agente chanado BIA , um consultor finacceiro que f
 > Inclua 3 exemplos de inerção 2 edge cases.
 >
 
-
-
-
-
-
-
+```
  
 ## System Prompt
 
