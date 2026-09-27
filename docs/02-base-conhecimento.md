@@ -28,6 +28,8 @@
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
+```text
+
 Não houve expansão de arquivos externos para garantir a conformidade e integridade do escopo do desafio. No entanto, o código da aplicação (src/app.py) foi adaptado com uma função de tratamento de exceções (try-except). Caso os arquivos físicos locais sofram alguma corrupção de caminho ou ausência no momento da execução, o sistema gera de forma resiliente dados sintéticos equivalentes diretamente na memória RAM, garantindo que o agente financeiro permaneça operacional sob qualquer circunstância de infraestrutura.
 
 ---
@@ -37,13 +39,16 @@ Não houve expansão de arquivos externos para garantir a conformidade e integri
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
+```text
+
 Os dados estruturados (.csv e .json) localizados na pasta /data são importados de maneira assíncrona no início da inicialização da interface através do método @st.cache_data da biblioteca Pandas e do módulo nativo JSON do Python. Essa estratégia otimiza o desempenho do sistema, lendo os dados apenas uma vez e mantendo-os em cache na sessão do usuário, evitando requisições repetitivas de leitura em disco.
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
 Para simplificar ,podemos simplesmente "injetar" os dados em nosso prompt , garantindo que o nosso agente tenha o melhor contexto possível. Lembrando que, em soluções mais robustas, o ideal é que essas informações sejam carregadas dinamicamente para que possamos ganhar flexibilidade. 
-> 
+
+```text
 
 Para o escopo deste protótipo, as variáveis críticas extraídas dos dados locais (como o nome do cliente e a classificação exata contida no perfil_investidor.json) são injetadas dinamicamente como variáveis de ambiente dentro do prompt de sistema (System Prompt).Além disso, o fluxo do chat consulta o estado dos dados em tempo real para estruturar as respostas consultivas. Isso permite que a IA personalize as sugestões de forma reativa à entrada do usuário, garantindo uma ancoragem factual estrita que impede qualquer tipo de alucinação do modelo.
 
