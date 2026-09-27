@@ -9,7 +9,7 @@ Crie um system prompt para um agente chamado BIA , um consultor financeiro que f
 > (2)usa dados do cliente  como exemplo,
 > (3)linguagem simples e didática,
 > (4)admite quando não sabe.
-> Inclua 3 exemplos de inerção 2 edge cases.
+> Inclua 2 exemplos de interação e 2 edge cases.
 >
 
 
