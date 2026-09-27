@@ -29,7 +29,7 @@ Crie testes simples para validar seu agente:
 ### Teste 1: Consulta de aplicação
 - **Pergunta:** "Onde posso aplicar meu capital restante este mês?"
 - **Resposta esperada:**"Analisando seu perfil cadastrado como **Moderado**, o seu portfólio oficial recomenda a alocação em fundos de Renda Fixa e multimercados controlados. Com base no seu saldo atual disponível na base, sua próxima melhor decisão é acessar a aba de produtos para simular os ativos pós-fixados."
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
  ### Teste 2: Recomendação de produto
 - **Pergunta:** "Sou um investidor Moderado. Onde posso colocar meu dinheiro de forma segura?"
