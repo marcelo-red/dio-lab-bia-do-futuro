@@ -1,7 +1,6 @@
 # Passo a Passo de execução
 
 ## Setup do ollama
-
 ```bash
 
 # 1. Instalar ollama (ollama.com)
@@ -10,17 +9,15 @@
 
 # 3. Testar se funciona
 ollama run llama3.2:latest "olá!"
+
 ```
-
-
 ## Código completo
-
+```bash
 Todo código-fonte está no arquivo  `app.py`.
 
+```
 ## Como Rodar
-
-Como Rodar 
-
+```bash
 # 1. Instalar dependências
 pip instal streamlit pandas requests
 
