@@ -1,6 +1,6 @@
 # Passo a Passo de execução
 
-## Setup do ollama (5 minutos)
+## Setup do ollama
 
 ```bash
 
