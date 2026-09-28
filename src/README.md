@@ -29,3 +29,11 @@ cd "C:\Projetos da Dio\Bia\src"
 
 python -m streamlit run app.py --server.port 8666
 ```
+## Evidências de execução
+
+<img width="1920" height="1080" alt="Bia 1" src="https://github.com/user-attachments/assets/5cbd1087-e33a-44da-8679-5a5fe32d4077" />
+
+
+<img width="1920" height="1080" alt="Bia 4" src="https://github.com/user-attachments/assets/582b3dbd-6399-4e28-8c82-197d3c8d181d" />
+
+```
