@@ -5,10 +5,10 @@
 > 
 > Preciso organizar a base de conhecimento do meu agente financeiro.
 > Tenho estes arquivos de dados:[liste os arquivos].
-> Me ajude a:
-> (1)entender o que cada arquivo contém,
-> (2)decidir como usar cada um,
-> (3)criar um exemplo de contexto formatado para incluir no prompt.
+> Este prompt Me ajuda a:
+> (1)Entender o que cada arquivo contém,
+> (2)Decidir como usar cada um,
+> (3)Criar um exemplo de contexto formatado para incluir no prompt.
 >
 
 
