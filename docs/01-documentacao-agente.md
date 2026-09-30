@@ -3,8 +3,8 @@
 > [!TIP]
 > **Prompt usado para esta etapa:**
 > 
-> Este prompt ajuda a documentar um agente de IA financeiro .O caso de uso é[descreva seu caso de uso]
-> Preciso definir:problema que resolve,público-alvo ,personalidade do agente,tom de voz
+> Este prompt ajuda a documentar um agente de IA financeiro .O caso de uso [descreva seu caso de uso]
+> Preciso definir: O problema que resolve, O público-alvo ,A personalidade do agente, O tom de voz
 > e estratégias anti-alucinação. Use o template abaixo como base:
 > 
 > [cole o template 01-documento-agente.md]
