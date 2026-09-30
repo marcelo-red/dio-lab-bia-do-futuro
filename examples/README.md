@@ -11,6 +11,6 @@ Esta pasta contém exemplos de implementação para cada etapa do desafio.
 
 Confira na pasta `src/` um exemplo básico de estrutura de aplicação usando Streamlit.
 
-## Link do Video da BIA no youtube
+## Link do Projeto BIA GuardFin videoVideo no youtube
 
 https://youtu.be/4HherCylYXk
