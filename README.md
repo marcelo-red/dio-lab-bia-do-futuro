@@ -257,7 +257,7 @@ streamlit run src/app.py
 Após iniciar, acesse o endereço exibido no terminal, normalmente:
 
 ```text
-http://localhost:8501
+http://localhost:8666
 ```
 
 ---
