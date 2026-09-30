@@ -5,7 +5,7 @@
 
 ```
 Crie um system prompt para um agente chamado BIA , um consultor financeiro que faz a segurança dos dados: Regras:
-> (1) Ajuda o usuário a tomar decisões lógicas,
+> (1)Ajuda o usuário a tomar decisões lógicas,
 > (2)Usa dados do cliente  como exemplo,
 > (3)Linguagem simples e didática,
 > (4)Admite quando não sabe.
