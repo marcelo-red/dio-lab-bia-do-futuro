@@ -5,10 +5,10 @@
 
 ```
 Crie um system prompt para um agente chamado BIA , um consultor financeiro que faz a segurança dos dados: Regras:
-> (1) ajuda o usuario a tomar decisões lógicas,
-> (2)usa dados do cliente  como exemplo,
-> (3)linguagem simples e didática,
-> (4)admite quando não sabe.
+> (1) Ajuda o usuário a tomar decisões lógicas,
+> (2)Usa dados do cliente  como exemplo,
+> (3)Linguagem simples e didática,
+> (4)Admite quando não sabe.
 > Inclua 2 exemplos de interação e 2 edge cases.
 >
 
