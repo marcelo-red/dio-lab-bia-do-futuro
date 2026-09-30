@@ -1,149 +1,360 @@
 # 🤖 Agente Financeiro Inteligente com IA Generativa
 
-## Contexto
+```markdown
+# BIA GuardFin
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+Agente financeiro inteligente desenvolvido com Inteligência Artificial Generativa para apoiar clientes na organização financeira, análise de gastos e tomada de decisões mais conscientes.
 
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+A solução foi criada como um protótipo funcional, combinando documentação de produto, base de conhecimento, engenharia de prompts, dados financeiros simulados e uma interface interativa.
 
 ---
 
-## O Que Você Deve Entregar
+## Visão geral
 
-### 1. Documentação do Agente
+A BIA GuardFin atua como uma assistente financeira consultiva. Em vez de apenas responder perguntas, ela analisa o contexto do cliente e fornece orientações personalizadas com base em:
 
-Defina **o que** seu agente faz e **como** ele funciona:
+- Perfil do investidor
+- Histórico de transações
+- Histórico de atendimentos
+- Produtos e serviços financeiros disponíveis
+- Regras de segurança e confiabilidade
 
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+O projeto utiliza exclusivamente dados simulados, evitando a exposição de informações financeiras reais.
 
 ---
 
-### 2. Base de Conhecimento
+## Problema
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+Muitas pessoas têm dificuldade para:
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
+- Entender seus próprios hábitos de consumo
+- Identificar gastos recorrentes ou excessivos
+- Organizar o orçamento mensal
+- Definir objetivos financeiros
+- Escolher produtos compatíveis com seu perfil
+- Transformar dados financeiros em decisões práticas
+
+A BIA GuardFin foi criada para tornar essa análise mais simples, clara e personalizada.
+
+---
+
+## Objetivo da solução
+
+A BIA GuardFin tem como objetivos:
+
+1. Interpretar informações financeiras do cliente.
+2. Identificar padrões de comportamento e consumo.
+3. Apresentar insights de forma simples e objetiva.
+4. Sugerir ações compatíveis com o perfil do cliente.
+5. Apoiar o planejamento de metas financeiras.
+6. Reduzir respostas genéricas ou sem fundamento.
+7. Evitar recomendações incompatíveis com o perfil de risco.
+
+> A BIA GuardFin é uma ferramenta de apoio e não substitui a orientação de um profissional financeiro.
+
+---
+
+## Principais capacidades
+
+### Análise financeira
+
+- Avaliação de receitas e despesas
+- Identificação de categorias com maior consumo
+- Detecção de gastos recorrentes
+- Comparação entre hábitos financeiros
+- Geração de insights sobre o comportamento do cliente
+
+### Personalização
+
+As respostas consideram o contexto individual do cliente, incluindo:
+
+- Perfil conservador, moderado ou arrojado
+- Objetivos financeiros
+- Preferências de investimento
+- Histórico de interações
+- Produtos disponíveis
+
+### Orientação consultiva
+
+A BIA pode auxiliar em situações como:
+
+- “Como posso economizar este mês?”
+- “Quais categorias estão consumindo mais do meu orçamento?”
+- “Estou preparado para investir?”
+- “Como posso organizar uma reserva de emergência?”
+- “Qual produto combina com o meu perfil?”
+
+### Segurança e confiabilidade
+
+A solução foi projetada para:
+
+- Utilizar dados estruturados como fonte de contexto
+- Evitar a criação de informações não existentes
+- Não recomendar produtos incompatíveis com o perfil do cliente
+- Informar quando não possui dados suficientes
+- Diferenciar orientação educativa de recomendação financeira
+- Proteger a privacidade por meio de dados mockados
+
+---
+
+## Arquitetura da solução
+
+O fluxo principal da aplicação pode ser representado da seguinte forma:
+
+```mermaid
+flowchart TD
+    A[Cliente] --> B[Interface da BIA GuardFin]
+    B --> C[Processamento da solicitação]
+    C --> D[Base de conhecimento]
+    D --> D1[Perfil do investidor]
+    D --> D2[Transações]
+    D --> D3[Histórico de atendimentos]
+    D --> D4[Produtos financeiros]
+    C --> E[Regras de segurança]
+    E --> F[Resposta personalizada]
+    F --> B
+```
+
+### Fluxo de atendimento
+
+1. O cliente envia uma pergunta.
+2. A aplicação interpreta a intenção da solicitação.
+3. Os dados relevantes são consultados.
+4. O contexto é combinado às instruções do agente.
+5. As regras de segurança são aplicadas.
+6. A BIA gera uma resposta clara e personalizada.
+
+---
+
+## Base de conhecimento
+
+A aplicação utiliza dados simulados organizados em arquivos estruturados:
+
+| Arquivo | Formato | Finalidade |
+|---|---|---|
+| `transacoes.csv` | CSV | Histórico financeiro e categorias de gastos |
+| `historico_atendimento.csv` | CSV | Registro de interações anteriores |
+| `perfil_investidor.json` | JSON | Perfil, objetivos e tolerância a risco |
 | `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
 
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+Essa separação facilita a manutenção, os testes e a evolução da solução.
 
 ---
 
-### 3. Prompts do Agente
+## Engenharia de prompts
 
-Documente os prompts que definem o comportamento do seu agente:
+A BIA GuardFin utiliza instruções específicas para orientar o comportamento do agente.
 
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
+O prompt define:
 
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
+- Persona e tom de voz
+- Objetivo da assistente
+- Forma de utilização dos dados
+- Limites das recomendações
+- Regras contra alucinações
+- Tratamento de informações ausentes
+- Formato esperado das respostas
+
+### Princípios do agente
+
+A BIA deve:
+
+- Ser clara, cordial e objetiva
+- Utilizar apenas informações disponíveis
+- Explicar suas conclusões
+- Fazer recomendações compatíveis com o perfil
+- Admitir limitações quando necessário
+- Evitar promessas de rentabilidade
+- Não inventar produtos, valores ou transações
 
 ---
 
-### 4. Aplicação Funcional
+## Tratamento de cenários de exceção
 
-Desenvolva um **protótipo funcional** do seu agente:
+A solução considera situações como:
 
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
+- Cliente sem histórico financeiro
+- Dados incompletos ou inconsistentes
+- Produto incompatível com o perfil
+- Pergunta fora do escopo financeiro
+- Solicitação de recomendação sem informações suficientes
+- Tentativa de obter dados de outro cliente
+- Perguntas sobre rentabilidade garantida
 
-📁 **Pasta:** [`src/`](./src/)
+Nesses casos, a BIA deve solicitar informações adicionais, oferecer uma orientação genérica segura ou informar que não pode responder com segurança.
 
 ---
 
-### 5. Avaliação e Métricas
+## Estrutura do projeto
 
-Descreva como você avalia a qualidade do seu agente:
+```text
+.
+├── README.md
+├── data/
+│   ├── historico_atendimento.csv
+│   ├── perfil_investidor.json
+│   ├── produtos_financeiros.json
+│   └── transacoes.csv
+├── docs/
+│   ├── 01-documentacao-agente.md
+│   ├── 02-base-conhecimento.md
+│   ├── 03-prompts.md
+│   ├── 04-metricas.md
+│   └── 05-pitch.md
+├── src/
+│   └── app.py
+├── assets/
+└── examples/
+```
 
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
+### Documentação
+
+A pasta `docs/` reúne o desenvolvimento conceitual e técnico da solução:
+
+- `01-documentacao-agente.md`: caso de uso, persona e arquitetura
+- `02-base-conhecimento.md`: estrutura e estratégia dos dados
+- `03-prompts.md`: prompts, exemplos e cenários de exceção
+- `04-metricas.md`: critérios de avaliação da qualidade
+- `05-pitch.md`: apresentação da proposta de valor
+
+---
+
+## Tecnologias e ferramentas
+
+- Python
+- Streamlit
+- Inteligência Artificial Generativa
+- CSV
+- JSON
+- Markdown
+- Mermaid
+- Git e GitHub
+
+---
+
+## Como executar
+
+### Pré-requisitos
+
+- Python 3.10 ou superior
+- Git
+- Chave de API do provedor de IA, caso aplicável
+
+### Instalação
+
+```bash
+git clone https://github.com/marcelo-red/dio-lab-bia-do-futuro.git
+cd dio-lab-bia-do-futuro
+pip install -r requirements.txt
+```
+
+### Execução da aplicação
+
+```bash
+streamlit run src/app.py
+```
+
+Após iniciar, acesse o endereço exibido no terminal, normalmente:
+
+```text
+http://localhost:8501
+```
+
+---
+
+## Avaliação da solução
+
+A qualidade da BIA GuardFin pode ser avaliada por meio de:
+
+- Precisão das respostas
 - Coerência com o perfil do cliente
+- Utilização correta da base de conhecimento
+- Taxa de respostas seguras
+- Ausência de informações inventadas
+- Clareza das explicações
+- Utilidade prática das recomendações
+- Capacidade de lidar com cenários de exceção
 
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
+Os critérios de avaliação estão detalhados em:
 
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
-
-```
-📁 lab-agente-financeiro/
-│
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+```text
+docs/04-metricas.md
 ```
 
 ---
 
-## Dicas Finais
+## Exemplos de uso
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+### Análise de gastos
+
+> “Quais são minhas principais categorias de despesas?”
+
+A BIA analisa as transações e apresenta as categorias com maior participação no orçamento.
+
+### Organização financeira
+
+> “Como posso reduzir meus gastos?”
+
+A assistente identifica oportunidades de economia com base no histórico do cliente.
+
+### Perfil de investimento
+
+> “Qual tipo de investimento combina comigo?”
+
+A resposta considera o perfil de risco, os objetivos e os produtos disponíveis.
+
+### Limitação segura
+
+> “Garanta que vou ganhar dinheiro com este investimento.”
+
+A BIA não promete rentabilidade e explica que investimentos possuem riscos e resultados variáveis.
+
+---
+
+## Segurança e responsabilidade
+
+Este projeto é um protótipo educacional e utiliza dados fictícios.
+
+A BIA GuardFin:
+
+- Não acessa contas bancárias reais
+- Não executa transações
+- Não substitui um assessor ou consultor financeiro
+- Não garante resultados financeiros
+- Não deve ser utilizada como única fonte para decisões de investimento
+
+Antes de tomar qualquer decisão financeira, o usuário deve avaliar sua situação e, quando necessário, buscar orientação profissional.
+
+---
+
+## Roadmap
+
+Possíveis evoluções futuras:
+
+- Integração com APIs financeiras autorizadas
+- Autenticação de usuários
+- Dashboard de indicadores financeiros
+- Classificação automática de transações
+- Alertas personalizados de gastos
+- Planejamento de metas financeiras
+- Histórico persistente de conversas
+- Avaliação automatizada das respostas
+- Integração com diferentes modelos de linguagem
+- Implementação de mecanismos avançados de controle e auditoria
+
+---
+
+## Conclusão
+
+A BIA GuardFin demonstra como a Inteligência Artificial Generativa pode ser aplicada ao contexto financeiro de forma personalizada, consultiva e responsável.
+
+O projeto combina dados estruturados, documentação, engenharia de prompts, interface interativa e regras de segurança para criar uma experiência mais útil e confiável para o usuário.
+
+---
+
+## Autor
+
+Desenvolvido por **Marcelo Red** como parte do desafio de criação de um agente financeiro inteligente com IA Generativa.
+
+[Repositório do projeto](https://github.com/marcelo-red/dio-lab-bia-do-futuro.git)
+```
