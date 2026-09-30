@@ -9,7 +9,7 @@ Esta pasta contém exemplos de implementação para cada etapa do desafio.
 
 ## Exemplo de Implementação Simples
 
-Confira na pasta `src/` um exemplo básico de estrutura de aplicação usando Streamlit.
+Confira na pasta `src/` código-fonte do arquivo  `app.py`. um exemplo básico de estrutura de aplicação usando Streamlit.
 
 ## Link do Projeto BIA GuardFin videoVideo no youtube
 
