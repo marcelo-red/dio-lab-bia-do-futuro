@@ -12,7 +12,6 @@ Crie um system prompt para um agente chamado BIA , um consultor financeiro que f
 > Inclua 2 exemplos de interação e 2 edge cases.
 >
 
-[Cole o template 03-Prompts.md]
 ```
  
 ## System Prompt
