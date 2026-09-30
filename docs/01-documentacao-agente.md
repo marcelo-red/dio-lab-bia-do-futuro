@@ -3,7 +3,7 @@
 > [!TIP]
 > **Prompt usado para esta etapa:**
 > 
-> Me ajude a documentar um agente de IA financeiro .O caso de uso é[descreva seu caso de uso]
+> Este prompt ajuda a documentar um agente de IA financeiro .O caso de uso é[descreva seu caso de uso]
 > Preciso definir:problema que resolve,público-alvo ,personalidade do agente,tom de voz
 > e estratégias anti-alucinação. Use o template abaixo como base:
 > 
@@ -25,7 +25,7 @@ Ela processa as bases de dados históricas para antecipar problemas de fluxo de 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-Usuarios que tem pouca experiência em transações financeiras e usuários que não se preocupam com a segurança na hora de efetuar transações financeiras  
+Usuários que tem pouca experiência em transações financeiras e usuários que não se preocupam com a segurança na hora de efetuar transações financeiras  
 
 ---
 
