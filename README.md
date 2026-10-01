@@ -352,6 +352,16 @@ O projeto combina dados estruturados, documentação, engenharia de prompts, int
 
 ---
 
+## Link do Projeto BIA GuardFin Video no youtube
+
+https://youtu.be/4HherCylYXk
+
+
+<img width="1429" height="878" alt="BIA Youtube" src="https://github.com/user-attachments/assets/643e37c0-6268-4975-965e-737d99fbd40e" />
+
+
+---
+
 ## Autor
 
 Desenvolvido por **Marcelo Red** como parte do desafio de criação de um agente financeiro inteligente com IA Generativa.
